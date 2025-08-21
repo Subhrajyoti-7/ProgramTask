@@ -18,6 +18,7 @@ public class Product {
 		this.price = price;
 	}
 
+	// getters and setters
 	public Integer getId() {
 		return id;
 	}
@@ -50,6 +51,7 @@ public class Product {
 		this.price = price;
 	}
 
+	// toString() for printing name of the product
 	@Override
 	public String toString() {
 		return name;
