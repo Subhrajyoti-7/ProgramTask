@@ -117,7 +117,7 @@ public class ProductServiceImpl implements ProductService{
 			// and filter them, if there is some negative values in the price
 			// then sort them using Comparator according to their price
 			// and then collect them into a List
-			List<Product> list = prods.stream().filter(p -> p.getPrice() >= 0).sorted(Comparator.comparing(Product::getName)).collect(Collectors.toList());
+			List<Product> list = prods.stream().filter(p -> p.getPrice() >= 0).sorted(Comparator.comparing(Product::getPrice)).collect(Collectors.toList());
 			return list;
 		} catch (Exception e) {
 			e.printStackTrace();
